@@ -15,13 +15,14 @@ app.use(express.json());
 
 dotenv.config({ path: '/.env' });
 
-// app.use(cookieParser);
-
-// app.get('/', (req, res) => {
-//     res.render('index');
-// })
+app.use(cookieParser());
 
 app.use('/', require('./routes/router'));
+
+app.use( (req, res, next) => {
+    if ( !req.user ) res.header('cache-control', 'private, no-cache, no-store, must-revalidate');
+    next();
+});
 
 app.listen(3000, () => {
     console.log('Listening on port 3000');
