@@ -21,18 +21,27 @@
             <div class="card border-primary">
                 <div class="card-header bg-primary text-white">Registrarse</div>
                 <div class="card-body text-primary">
-                    <form id="formRegister" action="/register" method="POST">
+                    <form id="formRegister" action="/register" method="POST" class="needs-validation" novalidate>
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombre completo</label>
                             <input type="text" class="form-control" id="name" name="name">
+                            <div class="invalid-feedback">
+                                Ingrese su nombre completo.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="user" class="form-label">Cuenta de usuario</label>
                             <input type="text" class="form-control" id="user" name="user">
+                            <div class="invalid-feedback">
+                                Ingrese un nombre de usuario.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">contraseña</label>
                             <input type="password" class="form-control" id="password" name="password">
+                            <div class="invalid-feedback">
+                                Ingrese una contraseña.
+                            </div>
                         </div>
                         <div class="card-footer bg-transparent border-primary">
                             <a href="/" type="button" class="btn btn-secondary">Cancelar</a>
@@ -44,6 +53,7 @@
         </div>
     </div>
   </div>
+  <script src="js/formValidate.js"></script>
 </body>
 
 </html>
