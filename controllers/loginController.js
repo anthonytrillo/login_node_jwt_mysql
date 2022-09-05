@@ -27,10 +27,10 @@ exports.login = async (req, res) => {
             res.render('login', {
               alert: true,
               alertTitle: 'Error',
-              alertMessage: 'Usuario y contraseña incorrectas',
+              alertMessage: 'Usuario o contraseña incorrectos',
               alertIcon: 'error',
               showConfirmButton: true,
-              timer: false,
+              timer: 1500,
               ruta: 'login'
             })
           } else {
