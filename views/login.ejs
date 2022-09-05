@@ -16,7 +16,7 @@
 
 <body class="text-center">
   <main class="form-signin w-100 m-auto">
-    <form id="formLogin" action="/login" method="POST">
+    <form id=""formLogin action="/login" method="POST">
       <img class="mb-4" src="img/logo.png" alt="" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Inicio de sesión</h1>
 
@@ -32,8 +32,23 @@
       <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
     </form>
     <br>
-    <a type="button" class="w-100 btn btn-lg btn-primary">Registrarse</a>
+    <a href="/register" type="button" class="w-100 btn btn-lg btn-primary">Registrarse</a>
   </main>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <% if (alert) { %>
+    <script>
+      Swal.fire({
+        title: '<%= alertTitle %>',
+        text: '<%= alertMessage %>',
+        icon: '<%= alertIcon %>',
+        showConfirmButton: '<%= showConfirmButton %>',
+        timer: '<%= timer %>'
+      }).then(() => {
+        window.location = '/<%= ruta %>'
+      })
+    </script>
+  <% } %>
 </body>
 
 </html>
