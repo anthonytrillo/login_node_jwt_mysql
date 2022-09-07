@@ -8,6 +8,7 @@ Una aplicación hecha con Node que cuenta con las siguientes características:
     - Validación de datos en API RESTful
     - Configuración y manejo de la conexión a MySQL
     - Estructura de archivos y carpetas de proyectos de aplicaciones basadas en Node
+    - Se usa el patrón de diseño MVC.
 
 ## Stack de tecnología de la App:
 
