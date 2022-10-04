@@ -17,6 +17,7 @@ La aplicación utiliza las siguientes herramientas y tecnologías,
 | Herramientas & Tecnologías      | Descripción  |
 | :-------------: |:-------------|
 | [Node](https://nodejs.org/es/) | Entorno de ejecución de JavaScript orientado a eventos asíncronos. |
+[JWT](https://jwt.io/) | JSON Web Token es un estándar qué está dentro del documento RFC 7519. |
 | [MySQL](https://www.mysql.com/) | Base de datos relacional open-source. |
 | [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript) | JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. |
 | [Bootstrap](https://getbootstrap.com/) | Bootstrap es un framework front-end utilizado para desarrollar aplicaciones web. |
